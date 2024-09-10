@@ -2,7 +2,7 @@
 BRANCH = main     # The branch you want to push to
 REMOTE = origin   # Remote repository
 
-# Check if COMMIT_MSG is set, and if not, display an error
+# Push target: Requires a commit message
 .PHONY: push
 push:
 	@if [ -z "$(COMMIT_MSG)" ]; then \
